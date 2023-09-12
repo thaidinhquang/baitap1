@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi 1 - Ôn tập JS Cơ bản</title>
+  </head>
+  <body>
+    <h1>Xin chao cả lớp</h1>
+    <h2>Các kiến thức về BOM</h2>
+    <img src="./imgs/Preview.jpg" alt="BOM" width="100%" height="auto" />
+    <div class="card" id="card">
+        <!-- gắn nội dung vào đây bằng javascript -->
+       </div>
+    <script>
+      var myInfor = {
+        name: "Đinh Quang Thái",
+        Hobby: "Play Game , film watch",
+        address: "HN",
+        languagesProgrammingLists: ["PHP", "JS"],
+      };
+      var cardElement = document.getElementById("card");
+      console.log(cardElement);
+      cardElement.innerHTML = `
+      <h2>Tên :${myInfor.name}</h2>
+      <div> Sở thích: ${myInfor.Hobby}</div>
+      <div> Địa chỉ: ${myInfor.address}</div>
+      <div> Ngôn ngữ : ${myInfor.languagesProgrammingLists}</div>
+      `;
+    </script>
+  </body>
+</html>
